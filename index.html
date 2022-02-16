@@ -11,6 +11,65 @@
 </head>
 <body>
     
+<!-- HEADER SECTION START  -->
+<header>
+    <div class="header-section m-5">
+        <h1 class="text-center">Budget Calculator</h1>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-section">
+                        <img class="img-fluid m-3 p-4" src="/img/undraw_personal_finance_tqcd.svg" alt="Budget Images">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="calculator-section p-2">
+                        <div class="income_section">
+                            <h2 class="m-3">Income</h2>
+                            <div class="income input-group m-3">
+                                <label class="input-group-text" for="">Income:</label>
+                                <input id="income-input" class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="income_section">
+                            <h2 class="m-3">Expenses</h2>
+                            <div class="food input-group m-3">
+                                <label class="input-group-text" for="">Food:</label>
+                                <input id="food-input" class="form-control" type="text">
+                            </div>
+                            <div class="rent input-group m-3">
+                                <label class="input-group-text" for="">Rent:</label>
+                                <input id="rent-input" class="form-control" type="text">
+                            </div>
+                            <div class="clothes input-group m-3">
+                                <label class="input-group-text" for="">Clothes:</label>
+                                <input id="cloth-input" class="form-control" type="text">
+                            </div>
+                            <button id="calculate-button" type="button" class="btn btn-primary ms-3 my-1">Calculate</button>
+                            <h4 class="m-3">Total Expenses: <span id="total-expenses">000</span></h4>
+                            <h4 class="m-3">Balance: <span id="balance">000</span></h4>
+                        </div>
+                        <div class="save-amount mt-5">
+                            <div class="save-input input-group m-3">
+                                <label class="input-group-text" for="">Save:</label>
+                                <input id="save_income" class="form-control" type="text">
+                                <span class="m-2">%</span>
+                                <button id="save-button" type="button" class="btn btn-primary">Save</button>
+                            </div>
+                            <h4 class="m-3">Saving Amount: <span>2000</span></h4>
+                            <h4 class="m-3">Remaining Balance: <span>2500</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
 
 
     <!-- JAVASCRIPT LINK  -->
