@@ -13,8 +13,8 @@
     
 <!-- HEADER SECTION START  -->
 <header>
-    <div class="header-section m-5">
-        <h1 class="text-center">Budget Calculator</h1>
+    <div class="header-section">
+        <h1 class="text-center p-5">Budget Calculator</h1>
     </div>
 </header>
 <main>
@@ -22,51 +22,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="img-section me-5 mt-lg-5">
-                        <img class="img-fluid m-3 p-4 " src="/img/undraw_personal_finance_tqcd.svg" alt="Budget Images">
+                    <div class="img-section rounded mt-lg-5">
+                        <img class="img-fluid rounded-3" src="/img/financial-freedom-still-life-arrangement-with-copy-g.jpg" alt="Budget Images">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="calculator-section p-2">
+                    <div class="calculator-section p-4">
                         <div class="income_section">
-                            <h2 class="m-3">Income</h2>
-                            <div class="income input-group m-3">
+                            <h2 class="my-3">Income</h2>
+                            <div class="income input-group">
                                 <label class="input-group-text" for="">Income:</label>
                                 <input id="income-input" class="form-control" type="text">
                             </div>
                         </div>
                         <div class="income_section">
-                            <h2 class="m-3">Expenses</h2>
-                            <div class="food input-group m-3">
+                            <h2 class="my-3">Expenses</h2>
+                            <div class="food input-group my-3">
                                 <label class="input-group-text" for="">Food:</label>
                                 <input id="food-input" class="form-control" type="text">
                             </div>
-                            <div class="rent input-group m-3">
+                            <div class="rent input-group my-3">
                                 <label class="input-group-text" for="">Rent:</label>
                                 <input id="rent-input" class="form-control" type="text">
                             </div>
-                            <div class="clothes input-group m-3">
+                            <div class="clothes input-group my-3">
                                 <label class="input-group-text" for="">Clothes:</label>
                                 <input id="cloth-input" class="form-control" type="text">
                             </div>
                             <!-- ERROR -->
-                            <p class="text-danger ms-3 d-none" id="invalid-worning">Please input a valid number</p>
-                            <button id="calculate-button" type="button" class="btn btn-primary ms-3 my-1">Calculate</button>
-                            <h4 class="m-3">Total Expenses: <span id="total-expenses">000</span></h4>
+                            <p class="text-danger d-none" id="invalid-worning">Please input a valid number</p>
+                            <button id="calculate-button" type="button" class="btn btn-primary my-1">Calculate</button>
+                            <h4 class="my-1">Total Expenses: <span id="total-expenses">000</span></h4>
+                            <h4 class="my-1">Balance: <span id="balance">000</span></h4>
                             <!-- ERROR -->
-                            <h4 class="m-3">Balance: <span id="balance">000</span></h4>
+                            <p class="text-danger d-none" id="balance-error">Too many expenses then income</p>
                         </div>
                         <div class="save-amount mt-5">
-                            <div class="save-input input-group m-3">
+                            <div class="save-input input-group">
                                 <label class="input-group-text" for="">Save:</label>
                                 <input id="save_income" class="form-control" type="text">
                                 <span class="m-2">%</span>
                                 <button id="save-button" type="button" class="btn btn-primary">Save</button>
                             </div>
                             <!-- ERROR -->
-                            <p class="text-danger ms-3 d-none" id="save-worning">You don't have enough money to save</p>
-                            <h4 class="m-3">Saving Amount: <span id="saved">000</span></h4>
-                            <h4 class="m-3">Remaining Balance: <span id="remaining-balance">000</span></h4>
+                            <p class="text-danger d-none" id="save-error">Please input a valid number</p>
+                            <p class="text-danger d-none" id="save-worning">You don't have enough money to save</p>
+                            <h4 class="my-1">Saving Amount: <span id="saved">000</span></h4>
+                            <h4 class="my-1">Remaining Balance: <span id="remaining-balance">000</span></h4>
                         </div>
                     </div>
                 </div>
