@@ -25,7 +25,6 @@ function getTotalCost(){
     }
     else{
         getError('invalid-worning');
-        return 0;
     }
 }
 function getBalance (){
