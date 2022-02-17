@@ -49,8 +49,11 @@
                                 <label class="input-group-text" for="">Clothes:</label>
                                 <input id="cloth-input" class="form-control" type="text">
                             </div>
+                            <!-- ERROR -->
+                            <p class="text-danger ms-3 d-none" id="invalid-worning">Use positive number</p>
                             <button id="calculate-button" type="button" class="btn btn-primary ms-3 my-1">Calculate</button>
                             <h4 class="m-3">Total Expenses: <span id="total-expenses">000</span></h4>
+                            <!-- ERROR -->
                             <h4 class="m-3">Balance: <span id="balance">000</span></h4>
                         </div>
                         <div class="save-amount mt-5">
@@ -60,6 +63,8 @@
                                 <span class="m-2">%</span>
                                 <button id="save-button" type="button" class="btn btn-primary">Save</button>
                             </div>
+                            <!-- ERROR -->
+                            <p class="text-danger ms-3 d-none" id="save-worning">You don't have enough money to save</p>
                             <h4 class="m-3">Saving Amount: <span id="saved">000</span></h4>
                             <h4 class="m-3">Remaining Balance: <span id="remaining-balance">000</span></h4>
                         </div>
