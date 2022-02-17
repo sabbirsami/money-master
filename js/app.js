@@ -1,19 +1,23 @@
-
-document.getElementById('calculate-button').addEventListener('click', function(){
-    let incomeText = document.getElementById('income-input');
+function getInputValue(inputId){
+    let incomeText = document.getElementById(inputId);
     let incomeValue = parseFloat(incomeText.value);
-
-    let foodText = document.getElementById('food-input');
-    let foodCost = parseFloat(foodText.value);
-    console.log(foodCost);
-    let rentText = document.getElementById('rent-input');
-    let rentCost = parseFloat(rentText.value);
-    console.log(rentCost);
-    let clothText = document.getElementById('cloth-input');
-    let clothCost = parseFloat(clothText.value);
-    console.log(clothCost);
+    return incomeValue
+}
+function getTotal(){
+    let foodCost = getInputValue('food-input');
+    let rentCost = getInputValue('rent-input');
+    let clothCost =getInputValue('cloth-input');
 
     let totalCost = foodCost + rentCost + clothCost;
+    return totalCost;
+}
+
+
+document.getElementById('calculate-button').addEventListener('click', function(){
+    
+    let incomeValue = getInputValue('income-input');
+    let totalCost = getTotal()
+    
     let totalExpensesFild = document.getElementById('total-expenses');
     let expensesText = parseFloat(totalExpensesFild.innerText);
     totalExpensesFild.innerText = totalCost;
